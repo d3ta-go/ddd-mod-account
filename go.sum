@@ -68,6 +68,8 @@ github.com/d3ta-go/ddd-mod-email v0.0.0-20201107122658-161024436b1f h1:mkqnXswjM
 github.com/d3ta-go/ddd-mod-email v0.0.0-20201107122658-161024436b1f/go.mod h1:M4tQp8Q2RTI0lRMO8pw2XnrUwzJQc79IjQ+VwVIXHfQ=
 github.com/d3ta-go/ddd-mod-email v0.0.0-20201107163418-d7f2b68b55a3 h1:C4Y9aRmuuHvjYLcrxe0APeS4SDYsrZRNCBSlxzbNAoo=
 github.com/d3ta-go/ddd-mod-email v0.0.0-20201107163418-d7f2b68b55a3/go.mod h1:H1NOfvDbDQqn+d896jBt/ozftBb5ToEu1lEKxYefLBc=
+github.com/d3ta-go/ddd-mod-email v0.0.1 h1:M873ebqrL/qGmm9oWNdV9TWsO0oo5b9IBpiqakEVA08=
+github.com/d3ta-go/ddd-mod-email v0.0.1/go.mod h1:H1NOfvDbDQqn+d896jBt/ozftBb5ToEu1lEKxYefLBc=
 github.com/d3ta-go/system v0.0.3 h1:fqkionUb7tLb8tqfLLPDENi27AS4E6ItAttGA4tX148=
 github.com/d3ta-go/system v0.0.3/go.mod h1:3JSsQSZ6h0+DSsnxa/3Va+IpCvmNWsw/AfLNpNGoAHc=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
