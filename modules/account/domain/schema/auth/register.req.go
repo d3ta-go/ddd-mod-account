@@ -1,9 +1,11 @@
 package auth
 
-// LoginRequest represent Login Request
-type LoginRequest struct {
+// RegisterRequest represent Register Request
+type RegisterRequest struct {
 	Username  string `json:"username"`
 	Password  string `json:"password"`
+	Email     string `json:"email"`
+	NickName  string `json:"nickName"`
 	Captcha   string `json:"captcha"`
 	CaptchaID string `json:"captchaID"`
 }
