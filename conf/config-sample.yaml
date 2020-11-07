@@ -1,0 +1,200 @@
+---
+# Applications
+applications:
+  servers:
+    restapi:
+      name: "DDD Technical Architecture Patterns:: REST API"
+      version: "0.1.0"
+      description: "Domain-Driven Design Technical Architecture Patterns:: Golang Sample"
+      options:
+        showEngineHeader: true
+        displayOpenAPI: true
+        listener:
+          port: 2020
+        middlewares:
+          logger:
+            enable: true
+        openAPIDefinition: # OpenAPIDefinition
+          info:
+            title: "DDD Technical Architecture Patterns: REST API"
+            description: "A Simple Implementation of `Domain-Driven Design Technical Architecture Patterns` in Golang"
+            termsOfService: https://github.com/muharihar/d3la-go
+            contact:
+              name: Muhammad Hari
+              url: https://github.com/muharihar
+              email: hi.muhammad.hari@gmail.com
+            license:
+              name: MIT
+              url: https://github.com/muharihar/d3la-go
+            version: 1.0.0
+
+# Databases
+databases:
+  identityDB:
+    connectionName: "db-identity"
+    driver: "mysql" # mysql, postgres, sqlserver, sqlite3
+    # mysql
+    username: "d3ta"
+    password: "d3ta"
+    hostName: "127.0.0.1:3306" # hostname:port OR path
+    dbName: "a_d3ta_iam"
+    config: "charset=utf8&parseTime=True&loc=Local"
+    maxIdleConns: 10
+    maxOpenConns: 10
+    logMode: true # shoud be "false" on production
+  mainDB:
+    connectionName: "db-main"
+    driver: "mysql" # mysql, postgres, sqlserver, sqlite3
+    # mysql
+    username: "d3ta"
+    password: "d3ta"
+    hostName: "127.0.0.1:3306" # hostname:port OR path
+    dbName: "a_d3ta_data"
+    config: "charset=utf8&parseTime=True&loc=Local"
+    maxIdleConns: 10
+    maxOpenConns: 10
+    logMode: true # shoud be "false" on production
+  logDB:
+    connectionName: "db-log"
+    driver: "mysql" # mysql, postgres, sqlserver, sqlite3
+    # mysql
+    username: "d3ta"
+    password: "d3ta"
+    hostName: "127.0.0.1:3306" # hostname:port OR path
+    dbName: "a_d3ta_logs"
+    config: "charset=utf8&parseTime=True&loc=Local"
+    maxIdleConns: 10
+    maxOpenConns: 10
+    logMode: true # shoud be "false" on production
+  emailDB:
+    connectionName: "db-email"
+    driver: "mysql" # mysql, postgres, sqlserver, sqlite3
+    # mysql
+    username: "d3ta"
+    password: "d3ta"
+    hostName: "127.0.0.1:3306" # hostname:port OR path
+    dbName: "a_d3ta_email"
+    config: "charset=utf8&parseTime=True&loc=Local"
+    maxIdleConns: 10
+    maxOpenConns: 10
+    logMode: true # shoud be "false" on production
+
+# IAM
+IAM:
+  defaultAdmin:
+    username: "admin.d3tago"
+    password: "K0uNC1!@!"
+    nickName: "Hari"
+    email: "your.email.account@email.tld"
+    authorityID: "group:admin"
+  registration:
+    activationURL: "http://%s/api/v1/auths/registration/activate"
+    defaultAuthorityID: "group:default"
+  JWT:
+    issuer: "D3TA-Go"
+    signingKey: "D3TA-GO-SigningKey"
+  casbin:
+    modelPath: "casbin/casbin_rbac_rest_model.conf"
+    enforcers:
+      defaultEnforcerID: "default-casbin-enforcer"
+      systemEnforcerID: "system-casbin-enforcer"
+
+# securities
+securities:
+  captcha:
+    keyLong: 4
+    imgWidth: 120
+    imgHeight: 40
+    imgUrl: "http://%s/system/captcha/image/%s.png"
+
+# Directory Locations
+dirLocations:
+  conf: "./conf"
+  www: "./www"
+  temp: "./temp"
+  log: "./logs"
+  cache: "./caches"
+
+# Connectors
+connectors:
+  covid19:
+    covid19who:
+      code: who
+      name: Covid19 WHO Official Website
+      server: "https://covid19.who.int"
+      enable: true
+    covid19goid:
+      code: covid19goid
+      name: Covid19 Indonesia Official Website
+      server: "https://data.covid19.go.id"
+      enable: true
+
+# SMTP Servers
+SMTPServers:
+  defaultSMTP:
+    server: "smtp.gmail.com"
+    port: "587"
+    username: "email@gmail.com"
+    password: "password"
+    senderEmail: "no-reply@gmail.com"
+    senderName: "D3TAgo NoReply"
+
+# Caches
+caches:
+  # Cache with Redis engine Sample
+  sessionCache:
+    connectionName: "session-cache"
+    engine: "redis"
+    driver: "redis"
+    configurations: # Following redis engine
+      network: "tcp"
+      host: "127.0.0.1"
+      port: "6379"
+      username: ""
+      password: ""
+      db: 1
+      maxRetries: 3
+      poolSize: 10
+      minIdleConns: 5
+  # Cache with GoMacaron/Cache engine Sample
+  tmpDataCache:
+    connectionName: "tmp-data-cache"
+    engine: "gomacaron"
+    driver: "redis"
+    configurations: # Following GoMacaron/Cache engine
+      adapter: "redis"
+      adapterConfig: "addr:127.0.0.1:6379"
+      interval: 60
+      occupyMode: false
+      section: "cache"
+
+# Indexers
+indexers:
+  dataIndexer:
+    connectionName: "data-indexer"
+    engine: "elasticsearch"
+    driver: "elasticsearch"
+    version: "7"
+    configurations:
+      adapter: "elasticsearch"
+      addresses:
+        - "http://localhost:9200"
+        - "http://localhost:9201"
+      username: ""
+      password: ""
+      cloudID: ""
+      APIKey: ""
+  logIndexer:
+    connectionName: "log-indexer"
+    engine: "elasticsearch"
+    driver: "elasticsearch"
+    version: "8"
+    configurations:
+      adapter: "elasticseach"
+      addresses:
+        - "http://localhost:9201"
+        - "http://localhost:9200"
+      username: ""
+      password: ""
+      cloudID: ""
+      APIKey: ""
