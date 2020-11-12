@@ -70,11 +70,15 @@ github.com/d3ta-go/ddd-mod-email v0.0.0-20201107163418-d7f2b68b55a3 h1:C4Y9aRmuu
 github.com/d3ta-go/ddd-mod-email v0.0.0-20201107163418-d7f2b68b55a3/go.mod h1:H1NOfvDbDQqn+d896jBt/ozftBb5ToEu1lEKxYefLBc=
 github.com/d3ta-go/ddd-mod-email v0.0.1 h1:M873ebqrL/qGmm9oWNdV9TWsO0oo5b9IBpiqakEVA08=
 github.com/d3ta-go/ddd-mod-email v0.0.1/go.mod h1:H1NOfvDbDQqn+d896jBt/ozftBb5ToEu1lEKxYefLBc=
+github.com/d3ta-go/ddd-mod-email v0.0.2 h1:eJEPSZkAsmP1ZJgLdJRYVQD9dg704/Om/8eRa/4639Q=
+github.com/d3ta-go/ddd-mod-email v0.0.2/go.mod h1:ZyGQYPSQXw5UCQ6xaujHhI2iAjhFzrBpJcu5MU5nUho=
 github.com/d3ta-go/system v0.0.3 h1:fqkionUb7tLb8tqfLLPDENi27AS4E6ItAttGA4tX148=
 github.com/d3ta-go/system v0.0.3/go.mod h1:3JSsQSZ6h0+DSsnxa/3Va+IpCvmNWsw/AfLNpNGoAHc=
+github.com/d3ta-go/system v0.0.7/go.mod h1:Ps2kaVLXfy4qexJds0+jZOzGIuF/rw4teFJmkFnDrGI=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dchest/captcha v0.0.0-20170622155422-6a29415a8364/go.mod h1:QGrK8vMWWHQYQ3QU9bw9Y9OPNfxccGzfb41qjvVeXtY=
+github.com/dchest/captcha v0.0.0-20200903113550-03f5f0333e1f/go.mod h1:QGrK8vMWWHQYQ3QU9bw9Y9OPNfxccGzfb41qjvVeXtY=
 github.com/denisenkom/go-mssqldb v0.0.0-20200428022330-06a60b6afbbc h1:VRRKCwnzqk8QCaRC4os14xoKDdbHqqlJtJA0oc1ZAjg=
 github.com/denisenkom/go-mssqldb v0.0.0-20200428022330-06a60b6afbbc/go.mod h1:xbL0rPBG9cCiLr28tMa8zpbdarY27NDyej4t/EjAShU=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
