@@ -14,6 +14,10 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# IDE
+.vscode
+sqltools*.log
+
 # DDD Module: Template
 conf/config.yaml
 conf/data/test-data.yaml
