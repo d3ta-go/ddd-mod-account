@@ -1,0 +1,32 @@
+---
+# Test Data
+test-data:
+  account:
+    auth:
+      activate-registration:
+        activation-code: 51b17681-6289-401c-af4d-75ef37d8f3e3
+        email: test.d3tago.c3ff06e0-47eb-4688-9653-efd952e3f5b7@email.com
+      login:
+        captcha-id: just-captcha-id
+        captcha-value: just-capthcha-value
+        password: P4s$W0rd!@!
+        username: test.d3tago.c3ff06e0-47eb-4688-9653-efd952e3f5b7
+      login-app:
+        client-key: 3957c036-f62d-4691-8eea-4ec977f66f5a
+        secret-key: NmM4MWRlYjI1Y2JiNGU1NjVmNmM5NWI3M2ZjODY2OWVmM2NmNmQ2NGE4NjYyZmE2NGFlNzljMWIyYTg1MTZjOA==
+      register:
+        captcha-id: just-captcha-id
+        captcha-value: just-capthcha-value
+        email: test.d3tago.%s@email.com
+        nick-name: Hari
+        password: P4s$W0rd!@!
+        username: test.d3tago.%s
+      response:
+        session:
+          login:
+            expiret-at: 1605968455000
+            token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVVVJRCI6IjIyZmIyYjY4LTNmMjctNGQyNy04YTMwLTY3MWI2MGQzMGFmMCIsIlVzZXJuYW1lIjoiYWRtaW4uZDN0YWdvIiwiTmlja05hbWUiOiJIYXJpIiwiQXV0aG9yaXR5SUQiOiJncm91cDphZG1pbiIsImV4cCI6MTYwNTk2ODQ1NSwiaXNzIjoiRDNUQS1HbyIsIm5iZiI6MTYwNTM2MjY1NX0.m4QehZn86y5sZP6F1kNb5a5MCczvn3t8logo7saMGS0
+          login-app:
+            client-app-code: super-admin-app
+            expiret-at: 1605968523000
+            token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MSwiVVVJRCI6IjIyZmIyYjY4LTNmMjctNGQyNy04YTMwLTY3MWI2MGQzMGFmMCIsIlVzZXJuYW1lIjoiYWRtaW4uZDN0YWdvIiwiTmlja05hbWUiOiJIYXJpIiwiQXV0aG9yaXR5SUQiOiJncm91cDphZG1pbiIsImV4cCI6MTYwNTk2ODUyMywiaXNzIjoiRDNUQS1HbyIsIm5iZiI6MTYwNTM2MjcyM30.EwuLsHuXlup1WiJWRXDAfha-2wtK4KitSUfdYh12Wks
