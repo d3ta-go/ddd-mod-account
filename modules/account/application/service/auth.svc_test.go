@@ -57,7 +57,7 @@ func TestAuthenticationService_Register(t *testing.T) {
 	if err != nil {
 		t.Errorf("GetViper: %s", err.Error())
 	}
-	testData := viper.GetStringMapString("test-data.account.auth.register")
+	testData := viper.GetStringMapString("test-data.account.auth.app-layer.service.register")
 
 	unique := utils.GenerateUUID()
 	req := appDTOAuth.RegisterReqDTO{}
@@ -83,13 +83,13 @@ func TestAuthenticationService_Register(t *testing.T) {
 		}
 		// save to test-data
 		// save result for next test
-		viper.Set("test-data.account.auth.activate-registration.activation-code", resp.ActivationCode)
-		viper.Set("test-data.account.auth.activate-registration.email", resp.Email)
+		viper.Set("test-data.account.auth.app-layer.service.activate-registration.activation-code", resp.ActivationCode)
+		viper.Set("test-data.account.auth.app-layer.service.activate-registration.email", resp.Email)
 
-		viper.Set("test-data.account.auth.login.username", req.Username)
-		viper.Set("test-data.account.auth.login.password", req.Password)
-		viper.Set("test-data.account.auth.login.captcha-value", req.Captcha)
-		viper.Set("test-data.account.auth.login.captcha-id", req.CaptchaID)
+		viper.Set("test-data.account.auth.app-layer.service.login.username", req.Username)
+		viper.Set("test-data.account.auth.app-layer.service.login.password", req.Password)
+		viper.Set("test-data.account.auth.app-layer.service.login.captcha-value", req.Captcha)
+		viper.Set("test-data.account.auth.app-layer.service.login.captcha-id", req.CaptchaID)
 		if err := viper.WriteConfig(); err != nil {
 			t.Errorf("Error: viper.WriteConfig(), %s", err.Error())
 		}
@@ -108,7 +108,7 @@ func TestAuthenticationService_ActivateRegistration(t *testing.T) {
 	if err != nil {
 		t.Errorf("GetViper: %s", err.Error())
 	}
-	testData := viper.GetStringMapString("test-data.account.auth.activate-registration")
+	testData := viper.GetStringMapString("test-data.account.auth.app-layer.service.activate-registration")
 
 	req := appDTOAuth.ActivateRegistrationReqDTO{}
 	req.ActivationCode = testData["activation-code"]
@@ -141,7 +141,7 @@ func TestAuthenticationService_Login(t *testing.T) {
 	if err != nil {
 		t.Errorf("GetViper: %s", err.Error())
 	}
-	testData := viper.GetStringMapString("test-data.account.auth.login")
+	testData := viper.GetStringMapString("test-data.account.auth.app-layer.service.login")
 
 	req := appDTOAuth.LoginReqDTO{}
 	req.Username = testData["username"]
@@ -164,8 +164,8 @@ func TestAuthenticationService_Login(t *testing.T) {
 		}
 		// save to test-data
 		// save result for next test
-		viper.Set("test-data.account.auth.response.session.login.token", resp.Token)
-		viper.Set("test-data.account.auth.response.session.login.expiret-at", resp.ExpiredAt)
+		viper.Set("test-data.account.auth.app-layer.service.response.session.login.token", resp.Token)
+		viper.Set("test-data.account.auth.app-layer.service.response.session.login.expiret-at", resp.ExpiredAt)
 		if err := viper.WriteConfig(); err != nil {
 			t.Errorf("Error: viper.WriteConfig(), %s", err.Error())
 		}
@@ -184,7 +184,7 @@ func TestAuthenticationService_LoginApp(t *testing.T) {
 	if err != nil {
 		t.Errorf("GetViper: %s", err.Error())
 	}
-	testData := viper.GetStringMapString("test-data.account.auth.login-app")
+	testData := viper.GetStringMapString("test-data.account.auth.app-layer.service.login-app")
 
 	req := appDTOAuth.LoginAppReqDTO{}
 	req.ClientKey = testData["client-key"]
@@ -205,9 +205,9 @@ func TestAuthenticationService_LoginApp(t *testing.T) {
 		}
 		// save to test-data
 		// save result for next test
-		viper.Set("test-data.account.auth.response.session.login-app.token", resp.Token)
-		viper.Set("test-data.account.auth.response.session.login-app.expiret-at", resp.ExpiredAt)
-		viper.Set("test-data.account.auth.response.session.login-app.client-app-code", resp.ClientAppCode)
+		viper.Set("test-data.account.auth.app-layer.service.response.session.login-app.token", resp.Token)
+		viper.Set("test-data.account.auth.app-layer.service.response.session.login-app.expiret-at", resp.ExpiredAt)
+		viper.Set("test-data.account.auth.app-layer.service.response.session.login-app.client-app-code", resp.ClientAppCode)
 
 		if err := viper.WriteConfig(); err != nil {
 			t.Errorf("Error: viper.WriteConfig(), %s", err.Error())
