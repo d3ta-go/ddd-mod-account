@@ -9,5 +9,6 @@ type RegisterReqDTO struct {
 
 // RegisterResDTO type
 type RegisterResDTO struct {
-	Email string `json:"email"`
+	Email          string `json:"email"`
+	ActivationCode string `json:"-"`
 }

@@ -70,6 +70,7 @@ func (s *AuthenticationSvc) Register(req *appAuthDTO.RegisterReqDTO, i identity.
 
 	resDTO := new(appAuthDTO.RegisterResDTO)
 	resDTO.Email = res.Email
+	resDTO.ActivationCode = res.ActivationCode
 
 	return resDTO, nil
 }
