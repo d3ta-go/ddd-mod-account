@@ -72,12 +72,16 @@ github.com/d3ta-go/ddd-mod-email v0.0.1 h1:M873ebqrL/qGmm9oWNdV9TWsO0oo5b9IBpiqa
 github.com/d3ta-go/ddd-mod-email v0.0.1/go.mod h1:H1NOfvDbDQqn+d896jBt/ozftBb5ToEu1lEKxYefLBc=
 github.com/d3ta-go/ddd-mod-email v0.0.2 h1:eJEPSZkAsmP1ZJgLdJRYVQD9dg704/Om/8eRa/4639Q=
 github.com/d3ta-go/ddd-mod-email v0.0.2/go.mod h1:ZyGQYPSQXw5UCQ6xaujHhI2iAjhFzrBpJcu5MU5nUho=
+github.com/d3ta-go/ddd-mod-email v0.0.4 h1:pHWCsCbDkb+YSEXeZPY/ZyGIR9ax8f6lWbxmk5vJwDg=
+github.com/d3ta-go/ddd-mod-email v0.0.4/go.mod h1:I5xGHZJbjCG+utcvq1g4US0HOOFIcJNjfS4c1Tc3AHI=
 github.com/d3ta-go/system v0.0.3 h1:fqkionUb7tLb8tqfLLPDENi27AS4E6ItAttGA4tX148=
 github.com/d3ta-go/system v0.0.3/go.mod h1:3JSsQSZ6h0+DSsnxa/3Va+IpCvmNWsw/AfLNpNGoAHc=
 github.com/d3ta-go/system v0.0.7 h1:8b+1g5uSudXasbr4hnk/WIgdMsw7TM3LzAI1QZDC3z4=
 github.com/d3ta-go/system v0.0.7/go.mod h1:Ps2kaVLXfy4qexJds0+jZOzGIuF/rw4teFJmkFnDrGI=
 github.com/d3ta-go/system v0.0.9 h1:Ir64Z2EGql68a6kolsBfkQMPSsrxiNFmQYhnkxFq+PA=
 github.com/d3ta-go/system v0.0.9/go.mod h1:Ps2kaVLXfy4qexJds0+jZOzGIuF/rw4teFJmkFnDrGI=
+github.com/d3ta-go/system v0.0.12 h1:LZrrZuyIyGpGsI19eJIxufeH3J5nmToOzXK3eIaJkuc=
+github.com/d3ta-go/system v0.0.12/go.mod h1:Ps2kaVLXfy4qexJds0+jZOzGIuF/rw4teFJmkFnDrGI=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dchest/captcha v0.0.0-20170622155422-6a29415a8364/go.mod h1:QGrK8vMWWHQYQ3QU9bw9Y9OPNfxccGzfb41qjvVeXtY=
