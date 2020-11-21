@@ -1,4 +1,4 @@
-# ddd-mod-account
+# ddd-mod-account  ( [![Go Report Card](https://goreportcard.com/badge/github.com/d3ta-go/ddd-mod-account)](https://goreportcard.com/report/github.com/d3ta-go/ddd-mod-account) )
 
 DDD Module: Account (Generic Subdomain)
 
