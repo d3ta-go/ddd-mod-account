@@ -1,4 +1,4 @@
-# ddd-mod-account  ( [![Go Report Card](https://goreportcard.com/badge/github.com/d3ta-go/ddd-mod-account)](https://goreportcard.com/report/github.com/d3ta-go/ddd-mod-account) )
+# ddd-mod-account ( [![Go Report Card](https://goreportcard.com/badge/github.com/d3ta-go/ddd-mod-account)](https://goreportcard.com/report/github.com/d3ta-go/ddd-mod-account) )
 
 DDD Module: Account (Generic Subdomain)
 
@@ -6,7 +6,7 @@ As a part of `Simple Implementation of Modular DDD Technical Architecture Patter
 
 ## Diagram v 0.2.2-Modular
 
-![DDD-Technical-Architecture-Patterns-Golang-0.2.2-MS Covid19 RESTAPI](docs/img/DDD-Technical-Architecture-Patterns-Golang-0.2.2-DDD_Account_Module.png)
+![DDD-Technical-Architecture-Patterns-Golang-0.2.2-DDD Account Module](docs/img/DDD-Technical-Architecture-Patterns-Golang-0.2.2-DDD_Account_Module.png)
 
 ## Components
 
@@ -35,13 +35,13 @@ D. Databases
 3. SQLServer (untested)
 4. SQLite3 (untested)
 
-F. Persistent Caches
+E. Persistent Caches
 
 1. Session/Token/JWT Cache (Redis, File, DB, etc) [tested: Redis]
 
-G. Messaging [to-do]
+F. Messaging [to-do]
 
-H. Logs [to-do]
+G. Logs [to-do]
 
 ### Development
 
